@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An accessible HTML5 boilerplate that meets WCAG 2.1 AA standards.">
+    <title>A11ly Accessible HTML Boilerplate</title>
+    <link rel="stylesheet" href="assets/css/a11y-core.css">
+    <link rel="stylesheet" href="assets/css/a11y-theme.css">
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <h1>A11y HTML Boilerplate</h1> <!-- Replace with your header text or logo -->
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section>
+            <h2>Why Accessibility Matters</h2>
+            <p>Web accessibility ensures that people with disabilities can use your website. Following WCAG guidelines
+                makes your site usable for everyone.</p>
+        </section>
+
+        <section>
+            <h2>Example Image</h2>
+            <figure class="full-width">
+                <img src="assets/img/cat-on-green-background-manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
+                    alt="A black and white cat with green eyes rests its paws on a bamboo surface, looking directly at the camera against a green background.">
+                <figcaption>
+                    A black and white cat with green eyes rests its paws on a bamboo surface, looking directly at the
+                    camera against a green background. Photo by <a
+                        href="https://unsplash.com/@madhatterzone?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Manja
+                        Vitolic</a>
+                    on <a
+                        href="https://unsplash.com/photos/black-and-white-cat-lying-on-brown-bamboo-chair-inside-room-gKXKBY-C-Dk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
+                </figcaption>
+            </figure>
+            <p>Images should have descriptive alt text unless they are purely decorative (then use
+                <code>alt=""</code>).
+            </p>
+        </section>
+
+        <section>
+            <h2>Forms</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your name here</p>
+    </footer>
+
+</body>
+
+</html>
