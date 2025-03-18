@@ -1,31 +1,9 @@
 /* A11y Boilerplate CSS */
 /* Ensuring WCAG 2.1 AA Compliance */
 
-/* Global Styles */
+/* Global Accessibility Styles */
 :root {
-    --primary-color: #005fcc;
-    --background-color: #ffffff;
-    --text-color: #222;
     --focus-outline: 3px solid #ffcc00;
-    --button-bg: #005fcc;
-    --button-hover: #003d99;
-    --button-text: #ffffff;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* Skip Link */
@@ -33,9 +11,6 @@ body {
     position: absolute;
     top: -40px;
     left: 10px;
-    background: #000;
-    color: #fff;
-    padding: 8px;
     z-index: 100;
 }
 
@@ -43,109 +18,7 @@ body {
     top: 10px;
 }
 
-/* Header & Navigation */
-header {
-    width: 100%;
-    max-width: 1200px;
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-nav ul li {
-    margin: 8px 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-@media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-
-/* Main Content */
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 100%;
-    max-width: 1200px;
-    padding: 16px;
-}
-
-section {
-    padding: 16px;
-}
-
-/* Image/Figure */
-figure img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Constrain image size */
-figure .full-width {
-    max-width: 800px;
-    /* Adjust this value as needed */
-    height: auto;
-    margin: 0 auto;
-}
-
-/* Forms */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input,
-button {
-    padding: 10px;
-    font-size: 1rem;
-}
-
-button {
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--button-hover);
-}
-
-/* Focus Styles */
-a,
-button,
-input,
-textarea {
-    outline: none;
-}
-
+/* Focus Styles - Ensuring Visible Keyboard Navigation */
 a:focus,
 button:focus,
 input:focus,
@@ -153,36 +26,25 @@ textarea:focus {
     outline: var(--focus-outline);
 }
 
-/* Footer */
-footer {
-    padding: 16px;
-    text-align: center;
-    width: 100%;
+/* Remove Default Outlines for Consistency */
+a,
+button,
+input,
+textarea {
+    outline: none;
+}
+
+/* Ensure Forms are Usable */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* High Contrast Mode */
 @media (prefers-contrast: more) {
-    body {
-        background-color: #000;
-        color: #fff;
-    }
-
     .skip-link {
         background: #fff;
-        color: #000;
-    }
-
-    nav ul li a {
-        color: #ffcc00;
-    }
-
-    button {
-        background-color: #ffcc00;
-        color: #000;
-    }
-
-    button:hover {
-        background-color: #ffffff;
         color: #000;
     }
 }
