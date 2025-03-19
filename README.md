@@ -3,13 +3,13 @@
 A lightweight, **WCAG 2.1 AA-compliant** HTML5 boilerplate for building accessible, inclusive websites. Designed with **semantic HTML**, **keyboard navigation**, and **responsive best practices** to help developers and designers create web experiences that work for everyone.
 
 ## Features
-✅ Fully **semantic HTML5** structure
-✅ **WCAG 2.1 AA** compliance for accessibility
-✅ **Keyboard-friendly navigation** and interactive elements
-✅ **Responsive design** with a mobile-first approach using **Flexbox**
-✅ **Skip links** and visible focus indicators for improved usability
-✅ Minimal, **progressive enhancement-friendly** JavaScript
-✅ Well-commented code for **educational purposes**
+- Fully **semantic HTML5** structure
+- **WCAG 2.1 AA** compliance for accessibility
+- **Keyboard-friendly navigation** and interactive elements
+- **Responsive design** with a mobile-first approach using **Flexbox**
+- **Skip links** and visible focus indicators for improved usability
+- Minimal, **progressive enhancement-friendly** JavaScript
+- Well-commented code for **educational purposes**
 
 ## Getting Started
 ### Download & Use
